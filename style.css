@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Salsa&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: gilroy;
+}
+
+.custom-bg {
+    background-color: #B9C3CC;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.title{
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    text-transform: uppercase;
+    color: #5c5a5a;
+    font-size: 1.5vw;
+    font-weight: 900;
+    /* font-family: gilroy-blod; */
+}
+p{
+    color: #2c2c2c;
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-style: italic;
+}
+.hello{
+    font-family: 'Salsa',sans-serif;
+}
+
+
+.right img{
+    border: 10px solid #B9C3CC;
+}
+
+
+button {
+    margin: 20px;
+  }
+  .custom-btn {
+    /* width: 130px; */
+    /* height: 40px; */
+    color: #fff;
+    border-radius: 5px;
+    /* padding: 50px 25px; */
+    /* padding: ; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    color: white;
+  }
+  
+#list4{
+    font-size: 1vw;
+}
+
+/* 6 */
+.btn-6 {
+    background:black;
+    line-height: 32px;
+    border: none;
+    width: 15vw;
+}
+.btn-6 span {
+    padding-left: 12px;
+    border-radius: 20%;
+font-weight: 400;
+font-family: gilroy;
+  }
+  .btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-6:before,
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+   box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:hover{
+    background: transparent;
+    color: white;
+    box-shadow: none;
+  }
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  .btn-6 span:hover:after {
+    width: 100%;
+  }
+  
+@media(max-width:650px){
+    .left{
+        position: absolute;
+        left: 50%;
+        background-color: red;
+
+    }
+    .top{
+        background-color: #5c5a5a;
+    }
+    #list1{
+        width: 50vw;
+        background-color: #fff;
+    }
+    #list2{
+        position: absolute;
+        background-color: tomato;
+        left: -150%;
+        width: 80%;
+        font-size: 15px;
+    }
+    .right{
+     opacity: 0;
+        overflow: hidden;
+        margin-top: 50vh;
+        background-color: violet;
+    }
+}
